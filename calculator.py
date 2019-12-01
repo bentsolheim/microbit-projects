@@ -34,17 +34,12 @@ while True:
             modus = modus + 1
         timePressed += 25
     if button_b.is_pressed() == 1:
-        timePressed += 25
-        if timePressed >= 75:
+        if timePressed == 0:
+            timePressed += 25
             if modus == 1:
                 tall1 = tall1 + 1
-                # if tall1 >= 10:
-                #    tall1 = 1
             if modus == 2:
                 tall2 = tall2 + 1
-                # if tall2 >= 10:
-                #    tall2 = 1
-            timePressed = 0
 
     if button_a.is_pressed() == 0 and button_b.is_pressed() == 0:
         timePressed = 0
