@@ -11,6 +11,19 @@ This project uses a couple of helper tools to ease development;
 * pseudo-microbit to get code completion in PyCharm. See https://mryslab.github.io/pseudo-microbit/install/ 
 * uflash to install code to the micro:bit. See https://uflash.readthedocs.io/en/latest/
 
+## uFlash
+
+Code can be installed on the micro:bit using uFlash
+
+    uflash <file>
+    
+or
+    
+    uflash --watch <file>
+    
+to install changes on file save.
+
+## Notes
 
     pip install pseudo-microbit
     sudo pip install uflash
@@ -23,14 +36,3 @@ To update the requirements file:
 
     pip freeze > requirements.txt
 
-## uFlash
-
-Code can be installed on the micro:bit using uFlash
-
-    uflash <file>
-    
-or
-    
-    uflash --watch <file>
-    
-to install changes on file save.
